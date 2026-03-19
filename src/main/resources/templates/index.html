@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root{--card-bg:#fff;--muted:#6b7280;--accent:#6CC1FF}
+        html,body{height:100%;margin:0}
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f3f6fb;color:#0f172a}
+        .container{max-width:960px;margin:48px auto;padding:20px}
+        .card{background:var(--card-bg);padding:28px;border-radius:14px;box-shadow:0 12px 30px rgba(2,6,23,0.06);display:flex;gap:28px;align-items:center}
+        .avatar{width:200px;height:200px;border-radius:12px;object-fit:cover;border:1px solid rgba(15,23,42,0.06);box-shadow:0 8px 20px rgba(15,23,42,0.06)}
+        h1{font-size:28px;margin:0 0 16px 0;color:#111827}
+        .info{font-size:16px;color:var(--muted)}
+        .info p{margin:8px 0}
+        .info strong{display:inline-block;width:150px;color:#111827;font-weight:600}
+        @media (max-width:640px){
+            .card{flex-direction:column;text-align:center}
+            .info strong{display:block;width:100%}
+            .avatar{width:160px;height:160px}
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <div class="container">
+        <section id="about">
+            <h1>Giới thiệu bản thân</h1>
+            <div class="card">
+                <img class="avatar" src="/images/me.svg" alt="Ảnh đại diện">
+                <div class="info">
+                    <p><strong>Họ và tên:</strong> Bùi Thị Bích Liêu</p>
+                    <p><strong>Mã số sinh viên:</strong> 2280601711</p>
+                    <p><strong>Lớp:</strong> 22DTHG6</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
