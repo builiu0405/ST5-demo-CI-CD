@@ -25,8 +25,5 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v7.0.0
         with:
-          context: .
-          push: true
-          tags: |
-            ${{ secrets.DOCKER_USERNAME }}/springboot-app:latest
-            ${{ secrets.DOCKER_USERNAME }}/springboot-app:${{ github.sha }}
+          username: ${{ secrets.LIEU245 }}
+          password: ${{ secrets.LIEU246 }}
