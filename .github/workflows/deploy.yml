@@ -29,5 +29,5 @@ jobs:
           push: true 
 
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/lieu245/duanjava:v${{ github.run_number }}
-            ${{ secrets.DOCKERHUB_USERNAME }}/lieu245/duanjava:latest
+            lieu245/duanjava:v${{ github.run_number }}
+            lieu245/duanjava:latest
